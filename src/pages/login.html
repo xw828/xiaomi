@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/login.css"/>
+</head>
+<body>
+	<div class="header">
+		<a href=""><img src="../images/27.png"/></a>
+	</div>
+	<div class="bann">
+		<div class="banner">
+			<div class="denglu">
+				<div class="nav-top">
+					<a href="">账号登录</a>
+					<span class="line"></span>
+					<a href="">扫码登录</a>
+				</div>
+				<div class="nav-middle">
+					<input type="text" placeholder="请输入用户名" id="un">
+					<input type="text" placeholder="请输入密码" id="pw">
+					<input type="button" value="登陆" id="submit">
+                    <a href="./register.html">手机短信登录/注册</a>
+                    <p class="worn">用户名或密码不正确</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+<script src="../lib/jquery.min.js"></script>
+    <script>
+        $('#submit').click(function(){
+            $.ajax({
+                method:'post',
+                url:'../interface/login.php',
+                data:{
+                    username:$('#un').val(),
+                    password:$('#pw').val()
+                },
+                success:function(data){
+                    if(data.code==1){
+                        //表示成功
+                        //把用户名存入本地存储
+                        localStorage.setItem('un',data.data.username)
+                        //跳转到登陆页面
+                        location.href="./xiaomi.html"
+                    }else{
+                        //表示失败
+                        $(".worn").css({"display":"block"})
+                    }
+                },
+                dataType:'json'
+            })
+        })
+    </script>

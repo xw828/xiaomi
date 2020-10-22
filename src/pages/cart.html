@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+    	body{
+            background:#f5f5f5;
+            user-select: none;
+    	}
+    	.main{
+    		width:1226px;
+    		margin: 0 auto;
+    	}
+    	table{
+    		display: none;
+    	}
+        
+        .imgs{
+            width: 60px;
+            height: 60px;
+        }
+        span{
+        	display: block;
+            float: left;
+            width: 38px;
+            height: 38px;
+            margin-top: 36px;
+            border-top:1px solid #C0C0C0;
+            border-bottom:1px solid #C0C0C0;
+            text-align: center;
+            line-height: 38px;
+        }
+        .header{
+        	height:100px;
+        	border-bottom:2px solid #ff6700;
+        	background: white;
+        }
+        .header img{
+        	margin-top: 26px;
+        	float:left;
+        }
+        .header h2{
+        	float: left;
+        	margin-top: 35px;
+        	margin-left: 45px;
+        	font-size: 27px;
+        }
+        .header p{
+        	margin-top:50px ;
+        	margin-left:16px ;
+        	font-size: 12px;
+        	color: #757575;
+        	float: left;
+        }
+        .header-right{
+        	float: right;
+        	margin-top: 44px;
+        }
+        .header-right span{
+        	float: right;
+        	display: block;
+        	width:3px;
+        	height:13px;
+        	margin:5px 16px 0;
+        	background: #c1b0c1;
+        }
+        .header-right a{
+        	display: block;
+        	float: right;
+        	text-decoration: none;
+        	color: #757575;
+        }
+       thead{
+       	display: block;
+       	background: white;
+       	height:70px;
+       	width:1226px;
+       	margin-top: 38px;
+       	line-height: 70px;
+       }
+       thead tr th:nth-of-type(1){
+       	display: inline-block;
+       	margin-left: 24px;
+       }
+       thead tr th:nth-of-type(2){
+       	margin-left: 142px;
+       	display: inline-block;
+       }
+       thead tr th:nth-of-type(3){
+       	margin-left: 380px;
+       	display: inline-block;
+       }
+       thead tr th:nth-of-type(4){
+       	margin-left: 166px;
+       	display: inline-block;
+       }
+       thead tr th:nth-of-type(5){
+       	margin-left: 114px;
+       	display: inline-block;
+       }
+       thead tr th:nth-of-type(6){
+       	margin-left: 90px;
+       	display: inline-block;
+       }
+       tbody{
+       	display: block;
+       	height:116px;
+       	width:1226px;
+       	background: white;
+       	position: relative;
+       	border-top: 1px solid #ff6700;
+       }
+       tr{
+       	display: block;
+       	height:116px;
+       	background: white;
+       	border-bottom: 1px solid #ff6700;
+       }
+       .product_name{
+       	position: absolute;
+       	left: 24px;
+       	display: inline-block;
+       	line-height: 116px;
+       }
+       .product_img{
+       	position: absolute;
+       	left: 236px;
+       }
+       .product_img img{
+       	margin-top: 20px;
+       }
+       .product_price{
+       	position: absolute;
+       	left: 688px;
+       	display: inline-block;
+       	line-height: 116px;
+       }
+       .prices{
+       	position: absolute;
+       	left: 1044px;
+       	display: inline-block;
+       	line-height: 116px;
+       	color:#ff6700;
+       }
+       .product_num{
+       	position: absolute;
+       	left: 840px;
+       	display: inline-block;
+       }
+       .del{
+       	position: absolute;
+       	left: 1170px;
+       	display: inline-block;
+       	margin-top: 38px;
+       	width:38px;
+       	height:38px;
+       	text-align: center;
+       	line-height: 38px;
+       }
+       .del:hover{
+       	background:red;
+       	transition: all 0.5s linear;
+       	opacity: 0.8;
+       }
+       .jian{
+            border-right:1px solid #C0C0C0;
+            font-size: 48px;
+            line-height: 33px;
+            cursor: pointer;
+            user-select:none;
+       }
+       .add{
+            border-left:1px solid #C0C0C0;
+            font-size: 32px;
+            line-height: 33px;
+            cursor: pointer;
+            user-select:none;
+       }
+       .add:hover{
+       	background: #C0C0C0;
+       	transition: all 0.5s linear;
+       }
+       .jian:hover{
+       	background: #C0C0C0;
+       	transition: all 0.5s linear;
+       }
+       .no-left{
+       	float: left;
+       	width:558px;
+       	margin-top: 120px;
+       }
+       .no-right{
+       	float:left;
+       	margin-top: 170px;
+       	margin-left: 80px;
+       }
+       .no-right a{
+       	display: block;
+       	width:170px;
+       	height:48px;
+       	background: #ff6700;
+       	line-height: 48px;
+       	text-align: center;
+       	color: white;
+       	font-size: 14px;
+       	margin-top: 50px;
+       	text-decoration: none;
+       }
+       .no-right h1{
+       	color:#b0b0b0;
+       	font-size: 46px;
+       }
+    </style>
+</head>
+<body>
+    <div class="header">
+    	<div class="headers main">
+    		<img src="../images/milogo.png"/>
+    		<h2>我的购物车</h2>
+    		<p>温馨提示：产品是否购买成功，以最终下单为准哦，请尽快结算</p>
+    		<div class="header-right">
+    			<a href="">用户</a>
+    			<span class="line"></span>
+    			<a href="">我的订单</a>
+    		</div>
+    	</div>
+    </div>
+    <div class="section main">
+    	<table>
+	        <thead>
+	            <tr>            
+	                <th>商品名称</th>
+	                <th>商品图片</th>
+	                <th>单价</th>
+	                <th>数量</th>
+	                <th>小计</th>
+	                <th>操作</th>
+	            </tr>
+	        </thead>
+	        <tbody>
+	           
+	        </tbody>
+    </table>
+    </div>
+    <div id="no" class="main">
+    	<div class="no-left">
+    		<img src="../images/cart-empty.png"/>
+    	</div>
+    	<div class="no-right">
+    		<h1>您的购物车还是空的！</h1>
+        	<a href="./xiaomi.html">马上去购物</a>
+    	</div>
+        
+    </div>
+    
+</body>
+</html>
+<script src="../lib/jquery.min.js"></script>
+    <script>
+        // 一打开购物车页面,展示购物车里面的商品
+        showTbody();
+        function showTbody(){
+            $.ajax({
+                url:'http://127.0.0.1/xiaomi/src/interface/showlist.php',
+                success:function(res){
+                    if(res.code){
+                        var arr = res.data;
+                        if(res.data){
+                            //如果有商品,table显示,div隐藏
+                            $('table').show();
+                            $('#no').hide();
+                            //在table里面展示商品信息
+                            $('tbody').empty();
+                            $.each(arr,function(index,item){
+                                $('tbody').append(`<tr id="${item.product_id}">
+                                    <td class="product_name">${item.product_name}</td>
+                                    <td class="product_img">
+                                        <img src="${item.product_img}" alt="" class="imgs">
+                                    </td>
+                                    <td class="product_price">${item.product_price}元</td>
+                                    <td class="prices">${item.product_price*item.product_num}元</td>
+                                    <td class="product_num">
+                                        <span class='add'>+</span>
+                                        <span>${item.product_num}</span>
+                                        <span class="jian">-</span>
+                                    </td>
+                                    <td class="del">删除</td>
+                                </tr>`)
+                            })
+                        }              
+
+                        
+                    }else{
+                        //如果没有商品,table隐藏,div显示
+                        $('table').hide();
+                        $('#no').show();                       
+                    } 
+                },
+                dataType:'json',
+                cache:false
+            })
+        }
+
+        // 点击+增加一个商品数量,点击-减少一个商品数量
+        $('tbody').click(function(e){
+            var target = e.target;
+            // target是一个dom节点
+            if((target.className=='add')||(target.className=='jian')){
+                // 点击+增加一个商品数量,点击-减少一个商品数量
+                $.ajax({
+                    url:'http://127.0.0.1/xiaomi/src/interface/updatewq.php',
+                    data:{
+                        type:target.className,
+                        id:$(target).parents('tr').attr('id')
+                    },
+                    success:function(res){
+                        if(res.code){
+                            showTbody()
+                        }
+                    },
+                    dataType:'json'
+                })
+
+            }else if(target.className=='del'){
+                // 点击删除按钮删除一个商品
+                $.ajax({
+                    url:'http://127.0.0.1/xiaomi/src/interface/delwq.php',
+                    data:{
+                        id:$(target).parents('tr').attr('id')
+                    },
+                    success:function(res){
+                        if(res.code){
+                            showTbody()
+                        }
+                    },
+                    dataType:'json'
+                })
+            }
+        })
+    </script>

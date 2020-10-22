@@ -1,0 +1,76 @@
+*{
+	margin: 0;padding: 0;
+}
+body{
+	background: #f9f9f9;
+	user-select: none;
+}
+
+.zhuce{
+	width:854px;
+	height:552px;
+	margin: 0 auto;
+	background: white;
+	margin-top: 138px;
+	position: relative;
+}
+.logo{
+	height:49px;
+}
+.logo img{
+	display: block;
+	margin: 0 auto;
+}
+.zhuce .p1{
+	font-size: 30px;
+	text-align: center;
+	margin-top: 48px;
+}
+.xinxi{
+	width:332px;
+	height:248px;
+	
+	margin:0 auto;
+	margin-top: 42px;
+}
+input{
+	width:330px;
+	height:40px;
+	border: none;
+	outline: none;
+	
+}
+.p2{
+	margin-top: 9px;
+	color: #666666;
+}
+.p3{
+	margin-top: 23px;
+}
+.p5{
+	position: absolute;
+	top:220px;
+	left:600px;
+	color: red;
+	display: none;
+}
+#un,#pw{
+	border:1px solid #e8e8e8;
+	margin-top: 8px;
+}
+#submit{
+	background: #ff6700;
+	cursor: pointer;
+	margin-top: 30px;
+	font-size: 14px;
+	color: white;
+}
+.p4{
+	margin-top: 64px;
+	color:#9d9d9d;
+	font-size: 12px;
+	text-align: center;
+}
+.p4 span{
+	color:#000;
+}

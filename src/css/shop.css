@@ -1,0 +1,166 @@
+.main{width:1226px;margin: 0 auto;position:relative;
+	overflow:hidden;}
+body{user-select: none;}
+.nav{height:40px;background:#333333;}
+.naver{height:40px;}
+.naver ul{float: left;}
+.naver ul li{float:left;margin:0 7px 0 8px ;}
+.naver ul li a{color:#b0b0b0;line-height: 40px;font-size: 11px;}
+.naver ul li a:hover{color:white;}
+.naver ul .shu{height:13px;width:2px;background:#393e3e;margin:15px 0 0 0 ;}
+.naver ul .deng{margin-left:167px;}
+.naver ul li:nth-child(1){margin:0 7px 0 0}
+.naver ul li:last-child{width:120px;background:#424242 ;float:right;margin:0 0 0 0 ;text-align: center;}
+.top{height:100px;}
+.top-left{width:234px;height:100px;float: left;}
+.top-left .logo{height:55px;width:55px;background:#ff6700 ;margin-top: 22px;position: relative;overflow: hidden;}
+.logo2{background: url(../images/mi-logo.png)no-repeat 50% 50%;position: absolute;width: 55px;height: 55px;transition: all .2s;}
+.logo1{background: url(../images/mi-home.png)no-repeat 50% 50%;margin-left: -55px;position: absolute;width: 55px;height: 55px;transition: all .2s;}
+.logo:hover .logo1{margin-left:0;}
+.logo:hover .logo2{margin-left:55px;}
+.top-center{float: left;}
+.top-center ul li{float: left;margin-right: 20px;}
+.top-center ul li:nth-child(1){margin-left:10px;}
+.top-center ul li a{font-size: 16px;line-height: 100px;}
+.top-center ul li a:hover{color:orange;}
+.top-right{float:right;}
+.top-right form{height:48px;width:294px;border: 1px solid #e0e0e0 ;margin-top:25px ;}
+.top-right form input:nth-child(1){width:233px;height:48px;float:left;border: none;outline:none;border-right:1px solid #e0e0e0;font-size: 15px;padding-left:10px ;}
+.top-right form input:nth-child(2){width:50px;height:48px;float:left;border: none;outline:none;background:url(../images/xiaomi2_03.jpg)no-repeat 16px white  ;}
+.head{height:63px;border-top:1px solid #e0e0e0;border-bottom:1px solid #e0e0e0}
+.header{height:63px;}
+.header span{line-height: 63px;font-size: 18px;}
+.header a{display: block;float: right;line-height: 63px;font-size: 14px;}
+.header a:hover{color:orange;}
+.section .section-left{width:606px;height:741px;float:left;}
+.section .section-right{width:600px;height:741px;float:right;}
+.section .section-right .xinxi{width:600px; border-bottom:1px solid #e0e0e0 ;}
+.section .section-right h2{font-size: 24px;font-weight: 700;margin-top:38px;}
+.section .section-right .p1{font-size: 14px;color:#b0b0b0;margin-top: 18px;}
+.section .section-right .p2{margin-top: 22px;font-size: 14px;color:orange;}
+.section .section-right .p3{margin-top: 18px;font-size: 16px;color: orange;margin-bottom: 23px;}
+.section .section-right .dizhi{width:598px;height:102px;border:1px solid #e0e0e0;margin-top: 20px;background:#fafafa;}
+.section .section-right .dizhi .p4{margin-top: 34px;margin-left: 50px;font-size: 14px;}
+.section .section-right .dizhi .p4 a{color:orange;}
+.section .section-right .dizhi .p5{margin-left: 50px;margin-top: 9px;font-size: 14px;color:orange;}
+.section .section-right h3{margin-top: 24px;font-size: 20px;}
+.section .section-right .col{display: block;width:292px;height:42px;border: 1px solid orange;color:orange;font-size: 16px;line-height: 42px;text-align: center;margin-top: 16px;}
+.section .section-right .mon{width:600px;height:146px;background: #fafafa;margin-top: 30px;}
+.section .section-right .mon .p6{padding-top: 39px;margin-left: 30px;font-size: 14px;}
+.section .section-right .mon .p6 span{margin-right:30px ;display: inline;float: right;}
+.section .section-right .mon .p7{margin-left: 30px;margin-top: 35px;font-size: 24px;color:orange;position: relative;}
+.section .section-right .jia{display: block;width:300px;height:54px;color:white;font-size: 16px;line-height: 54px;text-align: center;margin-top: 30px;background:orange;float:left;}
+.section .section-right .like{display: block;width:142px;height:54px;color:white;font-size: 16px;line-height: 54px;text-align: center;margin-top: 30px;background:#b0b0b0;float:left;margin-left: 10px;}
+.section .section-right .p8{float:left;margin-top: 20px;color:#b0b0c1;}
+.flexslider {
+	
+	position: relative;
+	width: 560px;
+	height: 560px;
+	overflow: hidden;
+	zoom: 1;
+}
+
+.flexslider .slides li {
+	width: 100%;
+	height: 100%;
+}
+
+.flex-direction-nav a {
+	width: 70px;
+	height: 70px;
+	line-height: 99em;
+	overflow: hidden;
+	margin: -35px 0 0;
+	display: block;
+	background: url(../images/ad_ctr.png) no-repeat;
+	position: absolute;
+	top: 50%;
+	z-index: 10;
+	cursor: pointer;
+	opacity: 0;
+	filter: alpha(opacity=0);
+	border-radius: 35px;
+}
+
+.flex-direction-nav .flex-next {
+	background-position: 0 -70px;
+	right: 0;
+}
+
+.flex-direction-nav .flex-prev {
+	left: 0;
+}
+
+.flexslider:hover .flex-next {
+	opacity: 0.8;
+	filter: alpha(opacity=25);
+}
+
+.flexslider:hover .flex-prev {
+	opacity: 0.8;
+	filter: alpha(opacity=25);
+}
+
+.flexslider:hover .flex-next:hover,
+.flexslider:hover .flex-prev:hover {
+	opacity: 1;
+	filter: alpha(opacity=50);
+}
+
+.flex-control-nav {
+	width: 100%;
+	position: absolute;
+	bottom: 10px;
+	text-align: center;
+}
+
+.flex-control-nav li {
+	margin: 0 10px;
+	display: inline-block;
+	zoom: 1;
+	*display: inline;
+}
+
+.flex-control-paging li a {
+	background: url(../images/dot.png) no-repeat 0 -16px;
+	display: block;
+	height: 16px;
+	overflow: hidden;
+	text-indent: -99em;
+	width: 30px;
+	cursor: pointer;
+}
+
+.flex-control-paging li a.flex-active,
+.flex-control-paging li.active a {
+	background-position: 0 0;
+}
+
+.flexslider .slides a img {
+	width:560px;
+	height: 560px;
+	display: block;
+}
+
+button{
+	border: none;
+	outline: none;
+	cursor: pointer;
+}
+#num{
+	width:50px;
+	height:30px;
+	position: absolute;
+	font-size: 16px;
+	text-align: center;
+	font-size: 20px;
+	line-height: 30px;
+}
+#ti{
+	color: red;
+	left: 150px;
+	display: none;
+	position: absolute;
+	top:0;
+}

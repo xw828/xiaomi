@@ -1,0 +1,94 @@
+*{margin: 0;padding: 0;}
+body{user-select: none;}
+.header{
+	width:1130px;
+	height:98px;
+	margin: 0 auto;
+	
+}
+.bann{
+	background: url(../images/28.jpg) no-repeat -360px;
+	height:588px;
+}
+.banner{
+	width:1130px;
+	height:588px;
+	margin: 0 auto;
+	
+}
+.denglu{
+	width:410px;
+	height:568px;
+	background: white;
+	float:right;
+	margin-top:20px;
+	
+}
+.nav-top{
+	width:410px;
+	height:82px;
+}
+.nav-top a{
+	display: inline-block;
+	font-size:24px;
+	text-align:center;
+	margin-top: 27px;
+	text-decoration: none;
+	
+}
+.nav-top a:nth-of-type(1){
+	margin-left:40px;
+	color:#f5743f;
+}
+.line{
+	width: 1px;
+    height: 24px;
+    margin: 0 35px 0 42px;
+    border: 1px solid #e0e0e0;
+    background: #e0e0e0;
+}
+.nav-middle{
+	width:348px;
+	height:444px;
+	margin: 0 31px 0;
+}
+.nav-middle input{
+	height:48px;
+	width:346px;
+	border: none;
+	outline: none;
+	border: 1px solid #e0e0e0;
+	font-size: 14px;
+	color: #9b9b9b;
+	line-height: 48px;
+}
+.nav-middle #pw{
+	margin-top: 14px;
+}
+#submit{
+	height:48px;
+	width:346px;
+	border: none;
+	outline: none;
+	margin-top: 24px;
+	background: #ff6700;
+	text-align: center;
+	line-height: 48px;
+	font-size: 14px;
+	color: white;
+	cursor: pointer;
+}
+.nav-middle a{
+	display: block;
+	color: #ff9600;
+	margin-top: 13px;
+	text-align: center;
+	text-decoration: none;
+}
+.nav-middle .worn{
+	font-size: 30px;
+	color: red;
+	text-align: center;
+	margin-top: 30px;
+	display: none;
+}

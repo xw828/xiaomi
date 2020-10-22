@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="../css/register.css"/>
+</head>
+<body>
+	<div class="box">
+		<div class="zhuce">
+			<div class="logo">
+				<img src="../images/milogo.png"/>
+			</div>
+			<p class="p1">注册小米账号</p>
+			<div class="xinxi">
+				<p>用户姓名</p>
+                <input type="text" placeholder="请输入用户名" id="un">
+                <p class="p5">*用户名已被注册</p>
+				<p class="p2">成功注册帐号后，将不能被修改</p>
+				<p class="p3">用户密码</p>
+				<input type="text" placeholder="请输入密码" id="pw">
+				<input type="button" value="立即注册" id="submit">
+				<p class="p4">已阅读并同意：小米 <span>用户协议</span>和 <span>隐私政策</span></p>
+			</div>
+		</div>
+	</div>
+</body>
+</html>
+ <script src="../lib/jquery.min.js"></script>
+    <script>
+        $('#submit').click(function(){
+            $.ajax({
+                method:'post',
+                url:'../interface/register.php',
+                data:{
+                    username:$('#un').val(),
+                    password:$('#pw').val()
+                },
+                success:function(data){
+                    if(data.code==1){
+                        //表示成功,跳转到登陆页面
+                        location.href="./login.html"
+                    }else{
+                        //表示失败
+                        $(".p5").css({
+                            display:"block"
+                        })
+                    }
+                },
+                dataType:'json'
+            })
+        })
+    </script>
